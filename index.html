@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposé VALD</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./JS/JQuery 3.5.1.js"></script>
+    <script src="./JS/jQueryRotate.js"></script>
+    <script src="./JS/index.js"></script>
+    <script>
+        $(
+            function(){
+                $('#projet1').mouseenter(agrandir1);
+                $('#projet1').mouseleave(reduire1);
+                $('#projet2').mouseenter(agrandir2);
+                $('#projet2').mouseleave(reduire2);
+                $('#projet3').mouseenter(agrandir3);
+                $('#projet3').mouseleave(reduire3);
+                $('#projet4').mouseenter(agrandir4);
+                $('#projet4').mouseleave(reduire4);
+                $('#projet5').mouseenter(agrandir5);
+                $('#projet5').mouseleave(reduire5);
+                $('#projet6').mouseenter(agrandir6);
+                $('#projet6').mouseleave(reduire6);
+                $('#projet7').mouseenter(agrandir7);
+                $('#projet7').mouseleave(reduire7);
+                $('#projet8').mouseenter(agrandir8);
+                $('#projet8').mouseleave(reduire8);
+
+                $('#btnpoisson').click(poisson);
+                $('#btndesac').click(desac);
+            }
+        );
+    </script>
+</head>
+<body class="body">
+    <div id="noir">
+        
+        <h1>VALD</h1>
+
+
+        <div id="presentation">
+            <h2>Présentation de VALD</h2>
+            <div id="presentation2">
+                <div class="imgV">
+                    <img src="./Images/vald1.jpg" alt="">
+                </div>
+                <div id="txtpresentation">
+                    <p class="txt">-- Valentin Le Du alias VALD</p>
+                    <p class="txt">-- 15 juillet 1992</p>
+                    <p class="txt">-- diplomé d'une licence maths/info</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sep"></div>
+
+        <h2>Ses débuts</h2>
+        <div id="debut">
+            <a href="https://www.youtube.com/watch?v=POVVhaU9708"><img src="./Images/freestyledaymolition.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=g8aWb-TAalM"><img src="./Images/freestylegeorgio.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=og5qtJXfmd4"><img src="./Images/freestylechapka.jpg" alt=""></a>
+            <a href="https://www.youtube.com/watch?v=mKH0sZaY91s"><img src="./Images/freestylenqnt.jpg" alt=""></a>
+        </div>
+
+        <div class="sep"></div>
+
+        <h2>La dicographie de VALD</h2>
+        <div id="disco">
+            <div class="proj" id="projet1">
+                <img id="img1" src="./Images/nqntmqmqmb.jpg" alt="">
+                <p hidden id="txt1">--NQNTMQMQMB 2012 <br>--Titre le plus écouté: Journal perso</p>
+            </div>
+            <div class="proj" id="projet2">
+                <img id="img2" src="./Images/cdr.jpg" alt="">
+                <p hidden id="txt2">--Cours de rattrapage 2012 <br>--Titre le plus écouté: Pour si peu</p>
+            </div>
+            <div class="proj" id="projet3">
+                <img id="img3" src="./Images/nqnt.jpg" alt="">
+                <p hidden id="txt3">--NQNT 2014 <br>--Titre le plus écouté: Par Toutis</p>
+            </div>
+            <div class="proj" id="projet4">
+                <img id="img4" src="./Images/nqnt2.jpg" alt="">
+                <p hidden id="txt4">--NQNT2 2015 <br>--Titre le plus écouté: Selfie</p>
+            </div>
+            <div class="proj" id="projet5">
+                <img id="img5" src="./Images/agartha.jpg" alt="">
+                <p hidden id="txt5">--Agartha 2017 <br>--Titre le plus écouté: Vitrine avec Damso</p>
+            </div>
+            <div class="proj" id="projet6">
+                <img id="img6" src="./Images/xeu.jpg" alt="">
+                <p hidden id="txt6">--XEU 2018 <br>--Titre le plus écouté: Désaccordé</p>
+            </div>
+            <div class="proj" id="projet7">
+                <img id="img7" src="./Images/nqnt33.jpg" alt="">
+                <p hidden id="txt7">--NQNT33 2018 <br>--Titre le plus écouté: Rechute</p>
+            </div>
+            <div class="proj" id="projet8">
+                <img id="img8" src="./Images/cmec.jpg" alt="">
+                <p hidden id="txt8">--Ce monde est cruel 2019 <br>--Titre le plus écouté: Journal perso 2</p>
+            </div>
+        </div>
+
+        <div class="sep"></div>
+
+        <h2>Quelques musiques de VALD</h2>
+        <div class="sep2"></div>
+        <div id="musiques">
+            <div id="btn">
+                <button id="btnpoisson">Poisson</button>
+                <button id="btndesac">Désaccordé</button>
+            </div>
+            
+            <div id="poisson">
+                <img hidden id="valdpoisson" src="./Images/poisson.jpg" alt="">
+                <audio hidden id="controlmp3" controls src="./Images/vald-poisson.mp3">VALD POISSON</audio>
+            </div>
+            <div id="desac">
+                <video hidden id="videodesac" src="./Images/desaccorde.mp4" controls></video>
+            </div>
+        </div>
+
+
+
+
+        <div class="sep"></div>
+        <div class="sep"></div>
+    </div>
+</body>
+</html>
